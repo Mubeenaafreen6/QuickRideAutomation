@@ -224,6 +224,13 @@ public class NewUserRegPO
 	{
 		return eleCurrentLocTxt;
 	}
+	
+	@FindBy(id="com.disha.quickride:id/rideCreationButton")
+	private WebElement elepostButton;
+	public WebElement getElePostButton()
+	{
+		return elepostButton;
+	}
 	@FindBy(name="First Name")
 	private WebElement eleFbFirstNameTxtFld;
 	

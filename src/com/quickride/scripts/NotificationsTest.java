@@ -52,6 +52,8 @@ public class NotificationsTest extends QRBaseLib
 	 * 
 	 */	
 	@Test(priority=1,enabled=true)
+	
+	
 	public void testRiderPassengerJoinNoti()
 	{
 		sTestCaseID="Notification_01";

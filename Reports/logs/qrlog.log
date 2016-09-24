@@ -85,3 +85,72 @@ Login is completed -2016-07-29 22:03:58,215 - com.quickride.PO.NewUserRegPO - IN
 Login button is displayed -2016-07-29 22:06:00,567 - com.quickride.PO.NewUserRegPO - INFO
 Login is completed -2016-07-29 22:06:23,872 - com.quickride.PO.NewUserRegPO - INFO
 Logout is successful -2016-07-29 22:07:04,340 - com.quickride.PO.QRProfilePO - INFO
+SignUp button is displayed -2016-09-24 13:15:37,510 - com.quickride.PO.NewUserRegPO - INFO
+Exception in  case signUp() -2016-09-24 13:17:34,140 - com.quickride.PO.NewUserRegPO - ERROR
+SignUp button is displayed -2016-09-24 13:18:10,381 - com.quickride.PO.NewUserRegPO - INFO
+Sign Up is completed -2016-09-24 13:18:39,403 - com.quickride.PO.NewUserRegPO - INFO
+Login button is displayed -2016-09-24 13:18:40,508 - com.quickride.scripts.NewUserRegTest - INFO
+Account to activated page is displayed -2016-09-24 13:19:19,328 - com.quickride.scripts.NewUserRegTest - INFO
+SignUp button is displayed -2016-09-24 13:19:53,975 - com.quickride.PO.NewUserRegPO - INFO
+Sign Up is completed -2016-09-24 13:20:21,171 - com.quickride.PO.NewUserRegPO - INFO
+Activation code is successfully displayed to re-enter code -2016-09-24 13:20:28,480 - com.quickride.scripts.NewUserRegTest - INFO
+SignUp button is displayed -2016-09-24 13:21:03,258 - com.quickride.scripts.NewUserRegTest - INFO
+Account already exists popup is displayed -2016-09-24 13:21:26,026 - com.quickride.scripts.NewUserRegTest - INFO
+Forgot password reset page is successfully displayed -2016-09-24 13:21:27,925 - com.quickride.scripts.NewUserRegTest - INFO
+Login button is displayed -2016-09-24 13:22:01,246 - com.quickride.PO.NewUserRegPO - INFO
+Login is completed -2016-09-24 13:22:54,306 - com.quickride.scripts.NewUserRegTest - INFO
+Logout is successful -2016-09-24 13:23:08,410 - com.quickride.PO.QRProfilePO - INFO
+Login button is displayed -2016-09-24 13:23:08,615 - com.quickride.PO.NewUserRegPO - INFO
+Login is completed -2016-09-24 13:23:33,144 - com.quickride.scripts.NewUserRegTest - INFO
+Login button is displayed -2016-09-24 13:24:05,507 - com.quickride.scripts.NewUserRegTest - INFO
+Login Failed successfully -2016-09-24 13:24:20,168 - com.quickride.scripts.NewUserRegTest - INFO
+Login button is displayed -2016-09-24 13:25:03,299 - com.quickride.PO.NewUserRegPO - INFO
+Quick Ride app is closed -2016-09-24 13:25:17,802 - com.quickride.scripts.NewUserRegTest - INFO
+Quick Ride app is launched successfully again -2016-09-24 13:25:55,260 - com.quickride.scripts.NewUserRegTest - INFO
+SignUp button is displayed -2016-09-24 13:26:24,380 - com.quickride.PO.NewUserRegPO - INFO
+Sign Up is completed -2016-09-24 13:26:53,519 - com.quickride.PO.NewUserRegPO - INFO
+Account Activated popup is successfully displayed -2016-09-24 13:27:27,829 - com.quickride.scripts.NewUserRegTest - INFO
+Edit Profile page is succesfully displayed -2016-09-24 13:27:28,976 - com.quickride.scripts.NewUserRegTest - INFO
+Login button is displayed -2016-09-24 13:27:55,324 - com.quickride.PO.NewUserRegPO - INFO
+Login is completed -2016-09-24 13:28:24,152 - com.quickride.PO.NewUserRegPO - INFO
+Logout did not succeed and Quick Ride page is retained -2016-09-24 13:28:30,409 - com.quickride.scripts.NewUserRegTest - INFO
+SignUp button is displayed -2016-09-24 17:11:14,353 - com.quickride.PO.NewUserRegPO - INFO
+Sign Up is completed -2016-09-24 17:11:43,635 - com.quickride.PO.NewUserRegPO - INFO
+Account Activated popup is successfully displayed -2016-09-24 17:11:55,196 - com.quickride.scripts.NewUserRegTest - INFO
+New Ride page is succesfully displayed -2016-09-24 17:12:04,135 - com.quickride.scripts.NewUserRegTest - INFO
+SignUp button is displayed -2016-09-24 17:12:45,333 - com.quickride.PO.NewUserRegPO - INFO
+Exception in  case signUp() -2016-09-24 17:14:40,638 - com.quickride.PO.NewUserRegPO - ERROR
+SignUp button is displayed -2016-09-24 17:15:07,451 - com.quickride.PO.NewUserRegPO - INFO
+Exception in  case signUp() -2016-09-24 17:17:04,472 - com.quickride.PO.NewUserRegPO - ERROR
+SignUp button is displayed -2016-09-24 17:17:33,056 - com.quickride.scripts.NewUserRegTest - INFO
+Account already exists popup is displayed -2016-09-24 17:17:55,629 - com.quickride.scripts.NewUserRegTest - INFO
+Forgot password reset page is successfully displayed -2016-09-24 17:17:57,657 - com.quickride.scripts.NewUserRegTest - INFO
+Login button is displayed -2016-09-24 17:18:26,933 - com.quickride.PO.NewUserRegPO - INFO
+Login is completed -2016-09-24 17:19:13,859 - com.quickride.scripts.NewUserRegTest - INFO
+Logout is successful -2016-09-24 17:19:20,629 - com.quickride.PO.QRProfilePO - INFO
+Login button is displayed -2016-09-24 17:19:20,832 - com.quickride.PO.NewUserRegPO - INFO
+Login is completed -2016-09-24 17:20:00,569 - com.quickride.scripts.NewUserRegTest - INFO
+Login button is displayed -2016-09-24 17:20:32,624 - com.quickride.scripts.NewUserRegTest - INFO
+Login Failed successfully -2016-09-24 17:20:46,976 - com.quickride.scripts.NewUserRegTest - INFO
+Login button is displayed -2016-09-24 17:21:12,212 - com.quickride.PO.NewUserRegPO - INFO
+Quick Ride app is closed -2016-09-24 17:21:25,895 - com.quickride.scripts.NewUserRegTest - INFO
+Quick Ride app is launched successfully again -2016-09-24 17:21:53,030 - com.quickride.scripts.NewUserRegTest - INFO
+SignUp button is displayed -2016-09-24 17:22:25,318 - com.quickride.PO.NewUserRegPO - INFO
+Exception in  case signUp() -2016-09-24 17:24:20,422 - com.quickride.PO.NewUserRegPO - ERROR
+Login button is displayed -2016-09-24 17:24:41,533 - com.quickride.PO.NewUserRegPO - INFO
+Login is completed -2016-09-24 17:25:05,155 - com.quickride.PO.NewUserRegPO - INFO
+Logout did not succeed and Quick Ride page is retained -2016-09-24 17:25:14,312 - com.quickride.scripts.NewUserRegTest - INFO
+Login button is displayed -2016-09-24 18:08:32,103 - com.quickride.PO.NewUserRegPO - INFO
+User is not registered, need to Sign Up first -2016-09-24 18:08:47,143 - com.quickride.PO.NewUserRegPO - INFO
+Sign Up is completed -2016-09-24 18:08:57,330 - com.quickride.PO.NewUserRegPO - INFO
+Account Activated popup is successfully displayed -2016-09-24 18:09:06,098 - com.quickride.PO.NewUserRegPO - INFO
+New Ride page is succesfully displayed -2016-09-24 18:09:15,068 - com.quickride.PO.NewUserRegPO - INFO
+Rider creating the ride -2016-09-24 18:09:15,068 - com.quickride.scripts.NotificationsTest - INFO
+Exception in createRide() -2016-09-24 18:09:25,645 - com.quickride.PO.FeedbackPO - ERROR
+Login button is displayed -2016-09-24 18:09:48,262 - com.quickride.PO.NewUserRegPO - INFO
+Exception in  case testRiderStartedNoti -2016-09-24 18:11:12,712 - com.quickride.scripts.NotificationsTest - ERROR
+Login button is displayed -2016-09-24 18:53:27,265 - com.quickride.PO.NewUserRegPO - INFO
+Exception in  case testRiderPassengerJoinNoti -2016-09-24 18:54:00,150 - com.quickride.scripts.NotificationsTest - ERROR
+Login button is displayed -2016-09-24 19:32:33,499 - com.quickride.PO.NewUserRegPO - INFO
+Login is completed -2016-09-24 19:32:57,549 - com.quickride.PO.NewUserRegPO - INFO
+Rider creating the ride -2016-09-24 19:32:57,549 - com.quickride.scripts.NotificationsTest - INFO

@@ -79,7 +79,7 @@ public class NewUserRegTest extends QRBaseLib
 			Assert.assertTrue(newUserRegPo.getEleAccActivatedTxt().isDisplayed(), "Account activated popup is not displayed");
 			qrLog.info("Account Activated popup is successfully displayed");
 			newUserRegPo.getEleSkipBtn().click();
-			Assert.assertTrue(newUserRegPo.getEleCurrentLocTxt().isDisplayed(), "New Ride page is not displayed");
+			Assert.assertTrue(newUserRegPo.getElePostButton().isDisplayed(), "New Ride page is not displayed");
 			qrLog.info("New Ride page is succesfully displayed");
 			
 		} catch (Exception e) {
@@ -201,11 +201,11 @@ public class NewUserRegTest extends QRBaseLib
 		try
 		{	
 			newUserRegPo.login(sData[1], sData[2]);
-			Assert.assertTrue(newUserRegPo.getEleCurrentLocTxt().isDisplayed(), "Login is not Successful");
+			Assert.assertTrue(newUserRegPo.getElePostButton().isDisplayed(), "Login is not Successful");
 			qrLog.info("Login is completed");
 			qrProfilePo.logout();
 			newUserRegPo.login(sData[1], sData[2]);
-			Assert.assertTrue(newUserRegPo.getEleCurrentLocTxt().isDisplayed(), "Login is not Successful");
+			Assert.assertTrue(newUserRegPo.getElePostButton().isDisplayed(), "Login is not Successful");
 			qrLog.info("Login is completed");
 			
 		}

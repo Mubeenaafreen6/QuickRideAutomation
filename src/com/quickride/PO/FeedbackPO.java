@@ -372,6 +372,91 @@ public class FeedbackPO {
 		return eleScheduled;
 	}
 	
+	
+	
+	@FindBy(id="com.disha.quickride:id/location")
+	private WebElement eleFromLocation;
+	public WebElement getEleFromLocation()
+	{
+		return eleFromLocation;
+	}
+	@FindBy(id="com.disha.quickride:id/location_to")
+	private WebElement eleToLocation;
+	public WebElement getEleToLocation()
+	{
+		return eleToLocation;
+	}
+	@FindBy(id="com.disha.quickride:id/find_riders_text")
+	private WebElement eleFindRide;
+	public WebElement getEleFindRide()
+	{
+		return eleFindRide;
+	}
+	@FindBy(id="com.disha.quickride:id/find_passengers_text")
+	private WebElement eleOfferRide;
+	public WebElement getEleOfferRide()
+	{
+		return eleOfferRide;
+	}
+	
+	@FindBy(id="com.disha.quickride:id/rideCreationButton")
+	private WebElement elePostRideButton;
+	public WebElement getElePostRideButton()
+	{
+		return elePostRideButton;
+	}
+	@FindBy(id="com.disha.quickride:id/rideScheduleTimeFirstStep")
+	private WebElement eleTimePicker;
+	public WebElement getEleTimePicker()
+	{
+		return eleTimePicker;
+	}
+	@FindBy(id="com.disha.quickride:id/passengerNoOfSeatsLayout")
+	private WebElement eleNoOfSeats;
+	public WebElement getNoOfSeats()
+	{
+		return eleNoOfSeats;
+	}
+	@FindBy(id="com.disha.quickride:id/riderCarLayout")
+	private WebElement eleVehicle;
+	public WebElement getEleVehicle()
+	{
+		return eleVehicle;
+	}
+	
+	@FindBy(id="com.disha.quickride:id/editRouteTextViewRideCreation")
+	private WebElement eleEditRoute;
+	public WebElement getEleEdtRoute()
+	{
+		return eleEditRoute;
+	}
+	@FindBy(id="com.disha.quickride:id/searchForLocation")
+	private WebElement eleSearchLocation;
+	public WebElement getEleSearchLocation()
+	{
+		return eleSearchLocation;
+	}
+	
+	@FindBy(id="com.disha.quickride:id/positive_button")
+	private WebElement eleConfigureVehicleButton;
+	public WebElement getEleConfigureVehicleButton()
+	{
+		return eleConfigureVehicleButton;
+	}
+	
+	@FindBy(id="com.disha.quickride:id/vehicle_number")
+	private WebElement eleRegNo;
+	public WebElement getEleRegNo()
+	{
+		return eleRegNo;
+	}
+	
+	
+	
+	
+	
+	
+	
 	public void joinRide(String src,String dest,String sName)
 	{
 		try{
@@ -421,7 +506,28 @@ public class FeedbackPO {
 			Assert.fail();
 		}
 	}
-	
+	public void createRideNew(String src, String dest,String regno, RidesPO ridesPo)
+	{
+		try
+		{
+			getEleFromLocation().click();
+			getEleEnterAddTxtFld().sendKeys(src);
+			getEleFirstOption().click();
+			getEleToLocation().click();
+			getEleEnterAddTxtFld().sendKeys(dest);
+			getEleFirstOption().click();
+			getEleOfferRide().click();
+			getElePostRideButton().click();
+			getEleRegNo().sendKeys(regno);
+			
+		}
+		catch(Exception e)
+		{
+			qrLog.error("Exception in createRide()");
+			e.printStackTrace();
+			Assert.fail();
+		}
+	}
 	public void verifyOfferRide()
 	{
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

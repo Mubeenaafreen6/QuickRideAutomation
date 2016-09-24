@@ -3,7 +3,28 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test verbose="2" name="Default test">
     <classes>
-      <class name="com.quickride.scripts.Transfer"/>
+      <class name="com.quickride.scripts.NotificationsTest"/>
     </classes>
   </test> <!-- Default test -->
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.quickride.scripts.NotificationsTest">
+        <methods>
+          <include name="testRiderStartedNoti"/>
+          <include name="testRiderStartedCancelled"/>
+          <include name="testPassengerJoinsCancels"/>
+          <include name="testNotiDeletedLongPress"/>
+          <include name="testNotiProfile"/>
+          <include name="testRideNotiPassengerJoinsCancels"/>
+          <include name="setUp"/>
+          <include name="testNotiReject"/>
+          <include name="testNotiPassengerJoinsCancelsAfterStart"/>
+          <include name="testNotiDeleteBySwipe"/>
+          <include name="testRiderPassengerJoinNoti"/>
+          <include name="testNotiCountTxt"/>
+          <include name="setobjects"/>
+        </methods>
+      </class> <!-- com.quickride.scripts.NotificationsTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
