@@ -1,0 +1,87 @@
+Exception in  case testRatingFeedback -2016-03-11 10:57:23,393 - com.quickride.scripts.FeedbackTest - ERROR
+Exception in  case testRatingFeedback -2016-03-11 10:59:33,815 - com.quickride.scripts.FeedbackTest - ERROR
+Login button is displayed -2016-03-11 11:00:08,513 - com.quickride.PO.NewUserRegPO - INFO
+User is not registered, need to Sign Up first -2016-03-11 11:00:31,399 - com.quickride.PO.NewUserRegPO - INFO
+Exception in  case testRatingFeedback -2016-03-11 11:01:39,284 - com.quickride.scripts.FeedbackTest - ERROR
+Login button is displayed -2016-03-11 11:04:49,146 - com.quickride.PO.NewUserRegPO - INFO
+User is not registered, need to Sign Up first -2016-03-11 11:05:04,151 - com.quickride.PO.NewUserRegPO - INFO
+Sign Up is completed -2016-03-11 11:05:14,920 - com.quickride.PO.NewUserRegPO - INFO
+Login button is displayed -2016-03-11 11:09:25,326 - com.quickride.PO.NewUserRegPO - INFO
+User is not registered, need to Sign Up first -2016-03-11 11:09:40,471 - com.quickride.PO.NewUserRegPO - INFO
+Sign Up is completed -2016-03-11 11:09:51,066 - com.quickride.PO.NewUserRegPO - INFO
+Account Activated popup is successfully displayed -2016-03-11 11:10:04,681 - com.quickride.PO.NewUserRegPO - INFO
+Login is completed -2016-03-11 11:10:17,932 - com.quickride.PO.NewUserRegPO - INFO
+Exception in createRide() -2016-03-11 11:11:01,179 - com.quickride.PO.FeedbackPO - ERROR
+Login button is displayed -2016-03-11 11:15:02,297 - com.quickride.PO.NewUserRegPO - INFO
+Exception in  case testRatingFeedback -2016-03-11 11:16:26,752 - com.quickride.scripts.FeedbackTest - ERROR
+Login button is displayed -2016-03-11 11:25:23,298 - com.quickride.PO.NewUserRegPO - INFO
+Login is completed -2016-03-11 11:25:58,262 - com.quickride.PO.NewUserRegPO - INFO
+Exception in createRide() -2016-03-11 11:26:12,840 - com.quickride.PO.FeedbackPO - ERROR
+Login button is displayed -2016-03-11 11:29:09,749 - com.quickride.PO.NewUserRegPO - INFO
+Login is completed -2016-03-11 11:29:33,662 - com.quickride.PO.NewUserRegPO - INFO
+black screen tap not seen -2016-03-11 11:30:01,530 - com.quickride.PO.FeedbackPO - INFO
+Ride Scheduled is displayed -2016-03-11 11:31:14,541 - com.quickride.PO.FeedbackPO - INFO
+Exception in  case testRatingFeedback -2016-03-11 11:33:06,188 - com.quickride.scripts.FeedbackTest - ERROR
+Login button is displayed -2016-03-11 11:37:06,555 - com.quickride.PO.NewUserRegPO - INFO
+Login is completed -2016-03-11 11:37:38,634 - com.quickride.PO.NewUserRegPO - INFO
+black screen tap not seen -2016-03-11 11:37:59,662 - com.quickride.PO.FeedbackPO - INFO
+Ride Scheduled is displayed -2016-03-11 11:38:32,410 - com.quickride.PO.FeedbackPO - INFO
+Logout is successful -2016-03-11 11:38:51,900 - com.quickride.PO.QRProfilePO - INFO
+Login button is displayed -2016-03-11 11:38:51,978 - com.quickride.PO.NewUserRegPO - INFO
+User is not registered, need to Sign Up first -2016-03-11 11:39:12,236 - com.quickride.PO.NewUserRegPO - INFO
+Sign Up is completed -2016-03-11 11:39:22,946 - com.quickride.PO.NewUserRegPO - INFO
+Account Activated popup is successfully displayed -2016-03-11 11:39:32,346 - com.quickride.PO.NewUserRegPO - INFO
+New Ride page is succesfully displayed -2016-03-11 11:39:35,920 - com.quickride.PO.NewUserRegPO - INFO
+black screen tap not seen -2016-03-11 11:39:55,361 - com.quickride.PO.FeedbackPO - INFO
+Join button is  successfully -2016-03-11 11:40:23,225 - com.quickride.scripts.FeedbackTest - INFO
+Logout is successful -2016-03-11 11:40:32,529 - com.quickride.PO.QRProfilePO - INFO
+Exception in  case testRatingFeedback -2016-03-11 11:41:49,217 - com.quickride.scripts.FeedbackTest - ERROR
+Exception in testTransfer -2016-07-29 20:28:39,609 - com.quickride.scripts.Transfer - ERROR
+Exception in testTransfer -2016-07-29 20:30:45,257 - com.quickride.scripts.Transfer - ERROR
+Exception in testTransfer -2016-07-29 20:32:19,219 - com.quickride.scripts.Transfer - ERROR
+Login button is displayed -2016-07-29 20:37:05,836 - com.quickride.PO.NewUserRegPO - INFO
+Exception in testTransfer -2016-07-29 20:47:46,780 - com.quickride.scripts.Transfer - ERROR
+Login button is displayed -2016-07-29 20:49:35,990 - com.quickride.PO.NewUserRegPO - INFO
+Login is completed -2016-07-29 20:50:20,609 - com.quickride.PO.NewUserRegPO - INFO
+Exception in testTransfer -2016-07-29 20:50:20,611 - com.quickride.scripts.Transfer - ERROR
+Login button is displayed -2016-07-29 20:52:01,516 - com.quickride.PO.NewUserRegPO - INFO
+Login is completed -2016-07-29 20:52:24,659 - com.quickride.PO.NewUserRegPO - INFO
+Exception in testTransfer -2016-07-29 20:52:24,660 - com.quickride.scripts.Transfer - ERROR
+Login button is displayed -2016-07-29 20:53:54,646 - com.quickride.PO.NewUserRegPO - INFO
+Login is completed -2016-07-29 20:54:28,628 - com.quickride.PO.NewUserRegPO - INFO
+Exception in testTransfer -2016-07-29 20:55:04,620 - com.quickride.scripts.Transfer - ERROR
+Login button is displayed -2016-07-29 20:57:02,066 - com.quickride.PO.NewUserRegPO - INFO
+Login is completed -2016-07-29 20:57:31,111 - com.quickride.PO.NewUserRegPO - INFO
+Login button is displayed -2016-07-29 21:32:20,510 - com.quickride.PO.NewUserRegPO - INFO
+Login is completed -2016-07-29 21:32:43,962 - com.quickride.PO.NewUserRegPO - INFO
+Exception in testTransfer -2016-07-29 21:32:50,158 - com.quickride.scripts.Transfer - ERROR
+Exception in testTransfer -2016-07-29 21:33:12,202 - com.quickride.scripts.Transfer - ERROR
+Exception in testTransfer -2016-07-29 21:33:33,339 - com.quickride.scripts.Transfer - ERROR
+Exception in testTransfer -2016-07-29 21:36:20,192 - com.quickride.scripts.Transfer - ERROR
+Exception in testTransfer -2016-07-29 21:36:41,240 - com.quickride.scripts.Transfer - ERROR
+Exception in testTransfer -2016-07-29 21:37:02,223 - com.quickride.scripts.Transfer - ERROR
+Login button is displayed -2016-07-29 21:43:04,816 - com.quickride.PO.NewUserRegPO - INFO
+Login is completed -2016-07-29 21:43:28,228 - com.quickride.PO.NewUserRegPO - INFO
+Exception in testTransfer -2016-07-29 21:46:29,568 - com.quickride.scripts.Transfer - ERROR
+Login button is displayed -2016-07-29 21:47:17,864 - com.quickride.PO.NewUserRegPO - INFO
+Login is completed -2016-07-29 21:47:41,672 - com.quickride.PO.NewUserRegPO - INFO
+Exception in testTransfer -2016-07-29 21:48:13,879 - com.quickride.scripts.Transfer - ERROR
+Login button is displayed -2016-07-29 21:49:26,214 - com.quickride.PO.NewUserRegPO - INFO
+Login is completed -2016-07-29 21:49:50,382 - com.quickride.PO.NewUserRegPO - INFO
+Login button is displayed -2016-07-29 21:53:54,954 - com.quickride.PO.NewUserRegPO - INFO
+Login is completed -2016-07-29 21:54:18,430 - com.quickride.PO.NewUserRegPO - INFO
+Logout is successful -2016-07-29 21:55:13,725 - com.quickride.PO.QRProfilePO - INFO
+Login button is displayed -2016-07-29 21:55:42,173 - com.quickride.PO.NewUserRegPO - INFO
+Login is completed -2016-07-29 21:56:04,841 - com.quickride.PO.NewUserRegPO - INFO
+Logout is successful -2016-07-29 21:56:54,777 - com.quickride.PO.QRProfilePO - INFO
+Login button is displayed -2016-07-29 21:57:21,912 - com.quickride.PO.NewUserRegPO - INFO
+Login is completed -2016-07-29 21:57:44,481 - com.quickride.PO.NewUserRegPO - INFO
+Exception in testTransfer -2016-07-29 21:57:50,181 - com.quickride.scripts.Transfer - ERROR
+Login button is displayed -2016-07-29 22:01:29,218 - com.quickride.PO.NewUserRegPO - INFO
+Login is completed -2016-07-29 22:01:52,298 - com.quickride.PO.NewUserRegPO - INFO
+Exception in testTransfer -2016-07-29 22:01:58,116 - com.quickride.scripts.Transfer - ERROR
+Login button is displayed -2016-07-29 22:03:35,054 - com.quickride.PO.NewUserRegPO - INFO
+Login is completed -2016-07-29 22:03:58,215 - com.quickride.PO.NewUserRegPO - INFO
+Login button is displayed -2016-07-29 22:06:00,567 - com.quickride.PO.NewUserRegPO - INFO
+Login is completed -2016-07-29 22:06:23,872 - com.quickride.PO.NewUserRegPO - INFO
+Logout is successful -2016-07-29 22:07:04,340 - com.quickride.PO.QRProfilePO - INFO
