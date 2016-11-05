@@ -11,6 +11,9 @@ import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
 
+import com.quickride.baselib.GenericLib;
+import com.quickride.baselib.QRBaseLib;
+
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
 
@@ -437,6 +440,12 @@ public class FeedbackPO {
 		return eleSearchLocation;
 	}
 	
+	@FindBy(id="com.disha.quickride:id/selectedLocationName")
+	private WebElement eleLocationName;
+	public WebElement getEleLocationName()
+	{
+		return eleLocationName;
+	}
 	@FindBy(id="com.disha.quickride:id/positive_button")
 	private WebElement eleConfigureVehicleButton;
 	public WebElement getEleConfigureVehicleButton()
@@ -451,13 +460,51 @@ public class FeedbackPO {
 		return eleRegNo;
 	}
 	
+	@FindBy(id="com.disha.quickride:id/user_profile_edit_save_text")
+	private WebElement eleSaveProfile;
+	public WebElement getEleSaveProfile()
+	{
+		return eleSaveProfile;
+	}
+	
+	@FindBy(id = "com.disha.quickride:id/back_icon_ride_view_image")
+	private WebElement elePassengerRideViewBackButton;
+	public WebElement getElePassengerRideViewBackButton()
+	{
+		return elePassengerRideViewBackButton;
+	}	
+	@FindBy(id="com.disha.quickride:id/riderImage")
+	private WebElement eleFindRider;
+	public WebElement getEleFindRider()
+	{
+		return eleFindRider;
+	}
 	
 	
+	@FindBy(id="com.disha.quickride:id/back_icon_ride_view_image")
+	private WebElement eleRouteViewBackButton;
+	public WebElement getEleRouteViewbackButton()
+	{
+		return eleRouteViewBackButton;
+	}
+	
+	@FindBy(id="com.disha.quickride:id/back_icon_ride_view_image")
+	private WebElement eleRiderRideViewBackButton;
+	public WebElement getEleRiderRideViewBackButton()
+	{
+		return eleRiderRideViewBackButton;
+	}
+	
+	@FindBy(id= "com.disha.quickride:id/call_icon_matched_user")
+	private WebElement eleCallIcon;
+	public WebElement getEleCallIcon()
+	{
+		return eleCallIcon;
+	}
 	
 	
-	
-	
-	public void joinRide(String src,String dest,String sName)
+	/*
+	public void joinRideOld(String src,String dest,String sName)
 	{
 		try{
 			getEleSearchBtn().click();
@@ -481,9 +528,52 @@ public class FeedbackPO {
 			e.printStackTrace();
 			Assert.fail();
 			}
+	}*/
+	public void joinRide(String src,String dest,String sName)
+	{
+		try
+		{
+			
+			getEleFromLocation().click();
+			getEleEnterAddTxtFld().sendKeys(src);
+			getEleToLocation().click();
+			getEleEnterAddTxtFld().sendKeys(dest);
+			getEleFindRide().click();
+			getEleFindRider().click();
+			driver.findElement(By.name(sName)).click();
+			Assert.assertTrue(getEleJoinBtn().isDisplayed());
+			getEleJoinBtn().click();
+			
+			
+		}
+		catch(Exception e)
+		{
+			qrLog.error("Exception in passengerjoin()");
+			e.printStackTrace();
+			Assert.fail();
+		}
 	}
-	
-	public void createRide(String src,String dest, RidesPO ridesPo){
+	public void ViewMatchingOption(String src,String dest,String sName)
+	{
+		try
+		{
+			getEleFromLocation().click();
+			getEleEnterAddTxtFld().sendKeys(src);
+			getEleToLocation().click();
+			getEleEnterAddTxtFld().sendKeys(dest);
+			getEleFindRide().click();
+			getElePostRideButton().click();
+			
+			driver.findElement(By.name(sName)).click();				
+		}
+		catch(Exception e)
+		{
+			qrLog.error("ViewMatchingOption() failed"); 
+			e.printStackTrace();
+			Assert.fail();
+		}
+	}
+	/*public void createRideOld(String src,String dest, RidesPO ridesPo){
 		try
 		{	getEleSearchBtn().click();
 			getEleEnterAddTxtFld().sendKeys(src);
@@ -505,8 +595,8 @@ public class FeedbackPO {
 			e.printStackTrace();
 			Assert.fail();
 		}
-	}
-	public void createRideNew(String src, String dest,String regno, RidesPO ridesPo)
+	}*/
+	public void createRide(String src, String dest, RidesPO ridesPo)
 	{
 		try
 		{
@@ -518,14 +608,28 @@ public class FeedbackPO {
 			getEleFirstOption().click();
 			getEleOfferRide().click();
 			getElePostRideButton().click();
-			getEleRegNo().sendKeys(regno);
-			
+			VerifyIfvehicleConfigured();			
 		}
 		catch(Exception e)
 		{
 			qrLog.error("Exception in createRide()");
 			e.printStackTrace();
 			Assert.fail();
+		}
+	}
+	public void VerifyIfvehicleConfigured()
+	{
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		try
+		{
+			getEleConfigureVehicleButton().click();
+			getEleRegNo().sendKeys("xyz");
+			getEleSaveProfile().click();
+			getEleRiderRideViewBackButton().click();
+		}
+		catch(Exception e)
+		{
+			getEleRiderRideViewBackButton().click();
 		}
 	}
 	public void verifyOfferRide()

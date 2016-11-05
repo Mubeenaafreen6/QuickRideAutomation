@@ -1,9 +1,11 @@
 package com.quickride.PO;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -22,7 +24,7 @@ public class QRProfilePO {
 	}
 	
 	
-	@FindBy(id="android:id/home")
+	@FindBy(id="android:id/up")
 	private WebElement eleMenuLst;
 	public WebElement getEleMenuLst()
 	{
@@ -118,11 +120,20 @@ public class QRProfilePO {
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		try{
 			getEleMenuLst().click();
-			driver.scrollTo("Logout");
+			driver.findElement(By.name("Logout"));
 			getEleLogoutBtn().click();
 			getEleYesBtn().click();
 			Assert.assertTrue(newuseregPo.getEleLoginBtn().isDisplayed(), "Failed to Logout from QuickRide");
 			qrLog.info("Logout is successful");
+			/*WebElement select = driver.findElement(By.id("Logout"));
+			List<WebElement> options = select.findElements(By.name("Logout"));
+			for (WebElement option : options) {
+			    if("Logout".equals(option.getText()))
+			        option.click(); 
+			}*/
+			/*WebElement element = driver.findElement(By.name("Logout"));
+            String txt = element.getText();
+			driver.scrollTo(txt);*/	
 		}
 		catch(Exception e)
 		{

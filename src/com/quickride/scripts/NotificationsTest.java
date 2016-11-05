@@ -51,9 +51,7 @@ public class NotificationsTest extends QRBaseLib
 	 * @author: LAKSHMI BS
 	 * 
 	 */	
-	@Test(priority=1,enabled=true)
-	
-	
+	@Test(priority=1,enabled=true)	
 	public void testRiderPassengerJoinNoti()
 	{
 		sTestCaseID="Notification_01";
@@ -74,7 +72,7 @@ public class NotificationsTest extends QRBaseLib
 			newUserRegPo.signUPorLogin(sData[6], sData[7],sData[8]);
 			feedbackPo.joinRide(sData[4],sData[5],sData[3]);
 			qrProfilePo.logout();
-		
+		 
 			qrLog.info("Rider logins receive notification");
 			newUserRegPo.getEleLoginBtn().click();
 			newUserRegPo.getEleLoginPhTxtFld().sendKeys(sData[1]);

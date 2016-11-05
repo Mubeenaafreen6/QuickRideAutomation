@@ -468,7 +468,6 @@ public class NewUserRegPO
 			Assert.assertTrue(getEleThankYouTxt().isDisplayed(), "SignUp is incomplete");
 			qrLog.info("Sign Up is completed");
 			
-
 			while(true)
 			{
 				sVerificationCode=GenericLib.getDBdata(GenericLib.getCongigValue(QRBaseLib.sConfigFile, "VERIFICATION"), "verifycode", "subject", sPhoneNum);
@@ -488,7 +487,6 @@ public class NewUserRegPO
 			getEleSkipBtn().click();
 			Assert.assertTrue(getEleCurrentLocTxt().isDisplayed(), "New Ride page is not displayed");
 			qrLog.info("New Ride page is succesfully displayed");
-			
 		}
 		catch(Exception e)
 		{
