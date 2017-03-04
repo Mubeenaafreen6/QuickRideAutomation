@@ -67,8 +67,7 @@ public class CallFeatureTest extends QRBaseLib
         		 newUserRegPo.signUPorLogin(sData[6], sData[7], sData[8]);
         		 feedbackPo.ViewMatchingOption(sData[4], sData[5], sData[3]);   
         		 if(feedbackPo.getEleCallIcon() != null && feedbackPo.getEleCallIcon().isDisplayed())
-        		 Assert.fail();
-        		 
+        		 Assert.fail();       		 
         	 }
         	 catch(Exception e)
         	 {

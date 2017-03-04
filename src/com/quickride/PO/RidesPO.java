@@ -18,7 +18,6 @@ public class RidesPO
 		this.driver=driver;
 		PageFactory.initElements(driver,this);
 	}
-
 	@FindBy(id = "com.disha.quickride:id/findNow")
 	private WebElement eleRideNwBtn;
 	
@@ -86,7 +85,7 @@ public class RidesPO
 	public WebElement getEleEntRdStSearchIcn() {
 		return eleEntRdStSearchIcn;
 	}
-	@FindBy(id="com.disha.quickride:id/destLocation")
+	@FindBy(id="com.disha.quickride:id/location_to")
 	private WebElement eleEntRdEndAddressIcn;
 	public WebElement getEleEntRdEndAddressIcn(){
 		return eleEntRdEndAddressIcn;
@@ -470,6 +469,13 @@ public class RidesPO
 	public WebElement getEleStartRideBtn(){
 		return eleStartRideBtn;
 	}
+	
+	@FindBy(name="Post")
+	private WebElement elePostButton;
+	public WebElement getElePostButton()
+	{
+		return elePostButton;
+	}
 	/*
 	 *@author Diganta
 	 * Description: Entering source and destination required for creating ride
@@ -526,18 +532,16 @@ public class RidesPO
 	public void offerRideFrmCurrLoc(String dest) throws InterruptedException{
 		FeedbackPO feedbackPo=new FeedbackPO(driver);
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		getEleRideNwBtn().click();
-		feedbackPo.tohandleblackscreen();
-		
 		try
 		{
 			qrLog.info("Enter Ride End Search icon is displayed");
 			getEleEntRdEndAddressIcn().click();
 			getEleEntrAddrssTxtField().sendKeys(dest);
 			getEleFirstSrcOptn().click();
-			getEleOfferRideTab().click();
+			getEleOfferRideTab().click();	
 			Thread.sleep(3000);
-			getEleOfferRideBtn().click();
+			getElePostButton().click();		
+			feedbackPo.VerifyIfvehicleConfigured();
 		}
 		catch(Exception e)
 		{
@@ -545,8 +549,8 @@ public class RidesPO
 		getEleFirstSrcOptn().click();
 		getEleOfferRideTab().click();
 		Thread.sleep(3000);
-		getEleOfferRideBtn().click();
-		
+		getElePostButton().click();
+		feedbackPo.VerifyIfvehicleConfigured();
 		}
 		
 	}
@@ -555,7 +559,6 @@ public class RidesPO
 	public void reqstRideFrmCurrentLoc(String dest) throws InterruptedException{
 		FeedbackPO feedbackPo=new FeedbackPO(driver);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		getEleRideNwBtn().click();
 		feedbackPo.tohandleblackscreen();
 		try
 		{
@@ -563,6 +566,7 @@ public class RidesPO
 			getEleEntrAddrssTxtField().sendKeys(dest);
 			getEleFirstSrcOptn().click();
 			getEleFindRideTab().click();
+			getElePostButton().click();
 		
 		}
 		catch(Exception e)
@@ -571,6 +575,7 @@ public class RidesPO
 				getEleEntrAddrssTxtField().sendKeys(dest);
 				getEleFirstSrcOptn().click();
 				getEleFindRideTab().click();
+				getElePostButton().click();
 		}
 	
 	}

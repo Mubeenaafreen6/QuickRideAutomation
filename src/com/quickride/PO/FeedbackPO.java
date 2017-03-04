@@ -389,13 +389,13 @@ public class FeedbackPO {
 	{
 		return eleToLocation;
 	}
-	@FindBy(id="com.disha.quickride:id/find_riders_text")
+	@FindBy(id="com.disha.quickride:id/find_riders")
 	private WebElement eleFindRide;
 	public WebElement getEleFindRide()
 	{
 		return eleFindRide;
 	}
-	@FindBy(id="com.disha.quickride:id/find_passengers_text")
+	@FindBy(id="com.disha.quickride:id/find_passengers")
 	private WebElement eleOfferRide;
 	public WebElement getEleOfferRide()
 	{
@@ -453,7 +453,7 @@ public class FeedbackPO {
 		return eleConfigureVehicleButton;
 	}
 	
-	@FindBy(id="com.disha.quickride:id/vehicle_number")
+	@FindBy(id="com.disha.quickride:id/car_registration_name_editText")
 	private WebElement eleRegNo;
 	public WebElement getEleRegNo()
 	{

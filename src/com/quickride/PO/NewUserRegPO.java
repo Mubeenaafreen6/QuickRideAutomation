@@ -380,6 +380,31 @@ public class NewUserRegPO
 		return eleEnterStAdd;
 	}
 	
+	@FindBy(id = "com.disha.quickride:id/positive_button")
+	private WebElement eleOkButton;
+	public WebElement getEleOkButton()
+	{
+		return eleOkButton;
+	}
+	@FindBy(id = "com.disha.quickride:id/profile_actionbar_backPress")
+	private WebElement eleProfileBackButton;
+	public WebElement getEleProfileBackButton()
+	{
+		return eleProfileBackButton;
+	}
+	@FindBy(id="com.disha.quickride:id/currentLocationText")
+	private WebElement elefromLocationTxt;
+	public WebElement getEleFromLocationTxt()
+	{
+		return elefromLocationTxt;
+	}
+	
+	@FindBy(id = "com.disha.quickride:id/profile_actionbar_backPress")
+	private WebElement eleProfileBackPress;
+	public WebElement geteleProfileBackPress()
+	{
+		return eleProfileBackPress;
+	}
 	/*@author: LAKSHMi BS
 	 *Description: To Sign up with valid phone, pwd, name for registraion
 	 */
@@ -470,7 +495,8 @@ public class NewUserRegPO
 			
 			while(true)
 			{
-				sVerificationCode=GenericLib.getDBdata(GenericLib.getCongigValue(QRBaseLib.sConfigFile, "VERIFICATION"), "verifycode", "subject", sPhoneNum);
+				String phoneNum = GenericLib.getDBdata("user", "phone", "contactNo", sPhoneNum);
+				sVerificationCode=GenericLib.getDBdata(GenericLib.getCongigValue(QRBaseLib.sConfigFile, "VERIFICATION"), "verifycode", "subject", phoneNum);
 				System.out.println(sVerificationCode);
 				if(!(sVerificationCode.isEmpty()))
 				{
@@ -484,14 +510,15 @@ public class NewUserRegPO
 			getEleActivateBtn().click();
 			Assert.assertTrue(getEleAccActivatedTxt().isDisplayed(), "Account activated popup is not displayed");
 			qrLog.info("Account Activated popup is successfully displayed");
-			getEleSkipBtn().click();
-			Assert.assertTrue(getEleCurrentLocTxt().isDisplayed(), "New Ride page is not displayed");
+			getEleOkButton().click();
+			geteleProfileBackPress().click();
+			Assert.assertTrue(getEleFromLocationTxt().isDisplayed(), "New Ride page is not displayed");
 			qrLog.info("New Ride page is succesfully displayed");
 		}
 		catch(Exception e)
 		{
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-			Assert.assertTrue(getEleCurrentLocTxt().isDisplayed(), "Login is not Successful");
+			Assert.assertTrue(getEleFromLocationTxt().isDisplayed(), "Login is not Successful");
 			qrLog.info("Login is completed");
 			
 		}
@@ -531,6 +558,7 @@ public class NewUserRegPO
 
 			while(true)
 			{
+				
 				sVerificationCode=GenericLib.getDBdata(GenericLib.getCongigValue(QRBaseLib.sConfigFile, "VERIFICATION"), "verifycode", "subject", sPhoneNum);
 				System.out.println(sVerificationCode);
 				if(!(sVerificationCode.isEmpty()))
@@ -544,7 +572,8 @@ public class NewUserRegPO
 			Assert.assertTrue(getEleAccActivatedTxt().isDisplayed(), "Account activated popup is not displayed");
 			qrLog.info("Account Activated popup is successfully displayed");
 			getEleSkipBtn().click();
-			Assert.assertTrue(getEleCurrentLocTxt().isDisplayed(), "New Ride page is not displayed");
+			getEleProfileBackButton().click();
+			Assert.assertTrue(getEleFromLocationTxt().isDisplayed(), "New Ride page is not displayed");
 			qrLog.info("New Ride page is succesfully displayed");
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			
@@ -552,7 +581,7 @@ public class NewUserRegPO
 		catch(Exception e)
 		{
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-			Assert.assertTrue(getEleCurrentLocTxt().isDisplayed(), "Login is not Successful");
+			Assert.assertTrue(getEleFromLocationTxt().isDisplayed(), "Login is not Successful");
 			qrLog.info("Login is completed");
 			
 		}

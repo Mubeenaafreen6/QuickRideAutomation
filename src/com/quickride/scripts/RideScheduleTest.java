@@ -62,12 +62,10 @@ public class RideScheduleTest extends QRBaseLib
 			//rider login
 			newUserRegPo.signUPorLogin(sData[1], sData[2], sData[3]);
 			ridesPo.offerRideFrmCurrLoc(sData[5]);
-			ridesPo.getEleBackArrowIcn().click();
 			qrProfilePo.logout();
 			//passenger login
 			newUserRegPo.signUPorLogin(sData[6], sData[7], sData[8]);
 			ridesPo.reqstRideFrmCurrentLoc(sData[10]);
-			ridesPo.getEleFindRideTab().click();
 			Assert.assertTrue(driver.findElement(By.name(sData[3])).isDisplayed(), "Rider created the ride is not visible in Find Ride");
 			qrLog.info("Rider created the ride is visible in Find Ride");
 			ridesPo.getEleRidrBackArrwIcn().click();
