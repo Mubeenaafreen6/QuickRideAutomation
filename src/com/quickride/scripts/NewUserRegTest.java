@@ -67,7 +67,8 @@ public class NewUserRegTest extends QRBaseLib
 			newUserRegPo.signUP(sData[1], sData[2], sData[3]);
 			while(true)
 			{
-				sVerificationCode=GenericLib.getDBdata(GenericLib.getCongigValue(QRBaseLib.sConfigFile, "VERIFICATION"), "verifycode", "subject", sData[1]);
+				String phoneNum = GenericLib.getDBdata("user", "phone", "contactNo", sData[1]);
+				sVerificationCode=GenericLib.getDBdata(GenericLib.getCongigValue(QRBaseLib.sConfigFile, "VERIFICATION"), "verifycode", "subject", phoneNum);
 				System.out.println(sVerificationCode);
 				if(!(sVerificationCode.isEmpty()))
 				{
@@ -293,7 +294,8 @@ public class NewUserRegTest extends QRBaseLib
 			newUserRegPo.signUP(sData[1], sData[2], sData[3]);
 			while(true)
 			{
-				sVerificationCode=GenericLib.getDBdata(GenericLib.getCongigValue(QRBaseLib.sConfigFile, "VERIFICATION"), "verifycode", "subject", sData[1]);
+				String phoneNum = GenericLib.getDBdata("user", "phone", "contactNo", sData[1]);
+				sVerificationCode=GenericLib.getDBdata(GenericLib.getCongigValue(QRBaseLib.sConfigFile, "VERIFICATION"), "verifycode", "subject", phoneNum);
 				System.out.println(sVerificationCode);
 				if(!(sVerificationCode.isEmpty()))
 				{

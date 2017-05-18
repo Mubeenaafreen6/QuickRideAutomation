@@ -39,7 +39,7 @@ public class NewUserRegPO
 	}
 
 	
-	@FindBy(name = "Sign Up")
+	@FindBy(name = "SIGN UP")
 	private WebElement eleSignUpLaunchBtn;
 	
 	public WebElement getEleSignUpLaunchBtn()
@@ -558,8 +558,8 @@ public class NewUserRegPO
 
 			while(true)
 			{
-				
-				sVerificationCode=GenericLib.getDBdata(GenericLib.getCongigValue(QRBaseLib.sConfigFile, "VERIFICATION"), "verifycode", "subject", sPhoneNum);
+				String phoneNum = GenericLib.getDBdata("user", "phone", "contactNo", sPhoneNum);
+				sVerificationCode=GenericLib.getDBdata(GenericLib.getCongigValue(QRBaseLib.sConfigFile, "VERIFICATION"), "verifycode", "subject", phoneNum);
 				System.out.println(sVerificationCode);
 				if(!(sVerificationCode.isEmpty()))
 				{
